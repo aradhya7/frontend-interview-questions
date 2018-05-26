@@ -1,11 +1,13 @@
 # frontend-interview-questions
 HTML, CSS, JS, ReactJS, Redux, Bootstrap interview questions
 
+---
+
 1.Difference between debounce and throttle
 
 Debounce is called only once after a specific delay normally used for input kepress
 
-
+````
 function debounce(fn, delay) {
   var timer = null;
   return function () {
@@ -21,9 +23,11 @@ $('input.username').keypress(debounce(function (event) {
   // do the Ajax request
 }, 250));
 
+````
 
 throttle fires every time with some intervals - used for mouse moves
 
+````
 function throttle(fn, threshhold, scope) {
   threshhold || (threshhold = 250);
   var last,
@@ -51,7 +55,8 @@ $('body').on('mousemove', throttle(function (event) {
   console.log('tick');
 }, 1000));
 
+````
 
-=========================================================================================
+---
 
 2.How to compare dates
